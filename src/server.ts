@@ -23,7 +23,7 @@ const PROJECT_ROOT = path.resolve(path.join(path.dirname(new URL(import.meta.url
 const TOKEN_PATH = path.join(PROJECT_ROOT, "token.json");
 
 // The credentials path is where your OAuth client credentials are stored
-const CREDENTIALS_PATH = path.join(PROJECT_ROOT, "credentials.json");
+const CREDENTIALS_PATH = "./credentials.json"; // Simple relative path
 
 // Create an MCP server instance
 const server = new McpServer({
